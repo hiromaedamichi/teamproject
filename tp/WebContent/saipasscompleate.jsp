@@ -7,6 +7,17 @@
 <title>Insert title here</title>
 </head>
 <body>
+   <div id="header">
+   </div>
 
+   <div id="main">
+      <div id="center">
+        <p>パスワードの再設定を完了いたしました。</p>
+      </div>
+
+      <div>
+         <p><a href='<s:url action="LoginAction" />'>ログイン画面へ</a></p>
+      </div>
+    </div>
 </body>
 </html>
