@@ -7,6 +7,24 @@
 <title>Insert title here</title>
 </head>
 <body>
+ <div id="header">
+ </div>
 
+ <div id="main">
+    <p>登録内容の確認をお願いします。</p>
+ </div>
+ <br/>
+ <div>
+    <s:form>
+        <tr>
+           <td>お客様が登録したパスワード</td>
+           <td><s:property value="session.password" /></td>
+        </tr>
+
+        <tr>
+        <td><input type="button" value="完了" onclik="submitAction('SaipassComplate')" /></td>
+        </tr>
+  </s:form>
+ </div>
 </body>
 </html>
