@@ -11,21 +11,32 @@
   </div>
 
   <div id="main">
-    <div id="cernter">
-    <h3>パスワードの再設定をおねがいします</h3>
-    <s:form action="SaipassAction">
-       <s:password name="password">
-       <s:password name="saipass">
-
-
-
-    <p></p>
-
-
-
-    </div>
-    </div>
-
-
+    <div id="top">
+      <p>パスワードの再設定をおねがいします</p>
+     </div>
+  <table>
+   <s:form action="SaipassConfirmAction">
+    <tr>
+       <td>
+          <label>パスワード</label>
+       </td>
+       <td>
+           <input type="password" name="password" value="" />
+       </td>
+    </tr>
+    <tr>
+     <td>
+        <label>再確認パスワード</label>
+     </td>
+     <td>
+      <input type="password" name="saipass" value="" />
+     </td>
+   </tr>
+   <s:submit value="登録内容確認の画面へ進む” />
+ </s:form>
+  </table>
+   <div>
+      <span>前のページへ</span>＜a href='<s:url action="LoginAction" />'＞戻る</a>
+   </div>
 </body>
 </html>
