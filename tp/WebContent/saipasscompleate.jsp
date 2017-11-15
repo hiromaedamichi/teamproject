@@ -13,16 +13,18 @@
 	<meta name="keywords" content="" />
 	<meta charset="utf-8">
 <title>UserInfoComplate</title>
+    <style type="text/css">
+        .main{}
+        h3{}
+        .under{}
+    </style>
 </head>
 <body>
-  <div id="header">
-  </div>
-
-  <div id="main">
+<div class="main">
    <div>
       <h3>ユーザーの登録を完了致しました。</h3>
 
-      <div>
+      <div class="under">
         <a href='<s:url action="LoginAction" />'>ログインへ</a>
       </div>
    </div>
