@@ -14,49 +14,48 @@
 	<meta name="keywords" content="" />
 	<meta charset="utf-8">
 <title>Saipass</title>
+    <style type ="text/css">
+        
+        table{}
+        .t{}
+        .f{}
+        .r{}
+        
+    </style>
 </head>
 <body>
   <div id="header">
-  </div>
-
-  <div id="main">
-    <div id="top">
+      <div class="top">
       <p>お客様のIDの入力と更新するパスワードの設定をお願いします。</p>
      </div>
+  </div>
+
+  <div class="main">
      <s:if test="errorMessage!=''">
      <s:property value="errorMessage" escape="false" />
      </s:if>
 
 
   <table>
-   <s:form action="SaipassComplateAction">
+   <form action="SaipassComplateAction">
     <tr>
-    <td><label>ID</label></td>
-    <td><input type="text" name="user_id" value=""  />
-    </td>
+    <td><label class="t">ID</label></td>
+    <td><input type="text" name="user_id" value="" class="f" /></td>
     </tr>
 
 
     <tr>
-       <td>
-          <label>新しいパスワード</label>
-       </td>
-       <td>
-           <input type="password" name="saipassword" value="" />
-       </td>
+       <td><label class="t">新しいパスワード</label></td>
+       <td><input type="password" name="saipassword" value=""  class="f"/></td>
     </tr>
 
     <tr>
-     <td>
-        <label>もう一度入力して下さい</label>
-     </td>
-     <td>
-      <input type="password" name="resaipassword" value=""  />
-     </td>
+     <td><label class="t">もう一度入力して下さい</label></td>
+     <td><input type="password" name="resaipassword" value=""   class="f"/></td>
    </tr>
-
-   <s:submit value="登録" />
- </s:form>
+   
+       <input type="submit" value="登録"  class="r"/>
+ </form>
 </table>
 
    <div>
@@ -65,5 +64,3 @@
   </div>
 </body>
 </html>
-
-
